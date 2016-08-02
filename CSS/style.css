@@ -782,3 +782,6 @@ body {
     background: url("../IMAGES/certificates_shadow.png");
 }
 
+.border-bottom-1 {
+    border-bottom: 1px solid #d8dadb;
+}

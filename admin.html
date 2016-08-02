@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin | Ак - Тулпар</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="CSS/admin_style.css" />
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- ============================================================ Left Panel =============================================================-->
+    <div class="admin_panel">
+        <div class="user_panel dropdown">
+            <a href="#"  data-toggle="dropdown">Super Admin</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="#logout">Выйти</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li>Объекты</li>
+            <li>Аренда техники</li>
+            <li>Сертификаты и прочее</li>
+        </ul>
+    </div>
+    <!-- =========================================================== End left Panel ==========================================================-->
+
+
+
+
+
+    <div class="admin_body">
+
+
+
+
+
+
+        <!-- ======================================================================== Login Form ==============================================-->
+        <!--<div class="log_in_form">-->
+            <!--<form role="form" method="post" action="/toolpar/login/auth">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control" id="login_field" placeholder="Логин" name="login">-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<input type="password" class="form-control" id="password_field" placeholder="Пароль" name="password">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Отправить</button>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!-- ======================================================================== End Login Form ==========================================-->
+
+
+
+
+        <!-- =========================================================== Objects Page =========================================================-->
+        <!--<div class="objects_page">-->
+            <!--<table class="table table-hover">-->
+                <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<td>#</td>-->
+                        <!--<td>Нименование</td>-->
+                        <!--<td>Местоположение</td>-->
+                        <!--<td>Описание</td>-->
+                        <!--<td>Закончено</td>-->
+                        <!--<td>ID компании</td>-->
+                        <!--<td>ID картинки</td>-->
+                    <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>Дом №18</td>-->
+                        <!--<td>Микрорайон Улан</td>-->
+                        <!--<td>Бла бла</td>-->
+                        <!--<td>Да</td>-->
+                        <!--<td>1</td>-->
+                        <!--<td>234</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>Дом №18</td>-->
+                        <!--<td>Микрорайон Улан</td>-->
+                        <!--<td>Бла бла</td>-->
+                        <!--<td>Да</td>-->
+                        <!--<td>1</td>-->
+                        <!--<td>234</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>1</td>-->
+                        <!--<td>Дом №18</td>-->
+                        <!--<td>Микрорайон Улан</td>-->
+                        <!--<td>Бла бла</td>-->
+                        <!--<td>Да</td>-->
+                        <!--<td>1</td>-->
+                        <!--<td>234</td>-->
+                    <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+        <!--</div>-->
+        <!-- =========================================================== End Objects Page =====================================================-->
+
+
+
+
+        <!-- =========================================================== Edit Object Page =====================================================-->
+        <!--<div class="objects_edit_page">-->
+            <!--<form class="form-horizontal" role="form" method="post" action="/toolpar/objects/edit/4">-->
+                <!--<div class="form-group">-->
+                    <!--<label for="id" class="col-sm-2 control-label">ID</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" name="id" id="id" value="4" readonly disabled>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="title" class="col-sm-2 control-label">Наименование</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="title" placeholder="Наименование" value="" name="title">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="location" class="col-sm-2 control-label">Местоположение</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="text" class="form-control" id="location" placeholder="Местоположение" value="" name="location">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="description" class="col-sm-2 control-label">Описание</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<textarea class="form-control" rows="3" id="description"></textarea>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="status" class="col-sm-2 control-label">Статус(Построен?)</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<select class="form-control" id="status" name="built">-->
+                            <!--<option>yes</option>-->
+                            <!--<option>no</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="company_id" class="col-sm-2 control-label">ID компании</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<select class="form-control" id="company_id" name="company_id">-->
+                            <!--<option>1 - (Ак - Тулпар)</option>-->
+                            <!--<option>2 - (Солнечный)</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<label for="image_id" class="col-sm-2 control-label">ID картинки</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<select class="form-control" id="image_id" name="image_id">-->
+                            <!--<option>324</option>-->
+                            <!--<option>634</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<div class="col-sm-offset-2 col-sm-10">-->
+                        <!--<button type="submit" class="btn btn-primary">Сохранить</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!-- =========================================================== End Edit Object Page =================================================-->
+
+
+
+
+
+
+
+
+        <!-- =========================================================== Rent Page ============================================================-->
+        <div class="objects_page">
+            <div class="title">Аренда техники</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Ссылка</td>
+                        <td>Предосмотр</td>
+                        <td colspan="2">Действия</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td>http://localhost/toolpar/public/images/2.png</td>
+                        <td><img src="IMAGES/objects/house1.png" width="200" /></td>
+                        <td>Редактировать</td>
+                        <td>Удалить</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>http://localhost/toolpar/public/images/2.png</td>
+                        <td><img src="IMAGES/objects/house1.png" width="200" /></td>
+                        <td>Редактировать</td>
+                        <td>Удалить</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>http://localhost/toolpar/public/images/2.png</td>
+                        <td><img src="IMAGES/objects/house1.png" width="200" /></td>
+                        <td>Редактировать</td>
+                        <td>Удалить</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>http://localhost/toolpar/public/images/2.png</td>
+                        <td><img src="IMAGES/objects/house1.png" width="200" /></td>
+                        <td>Редактировать</td>
+                        <td>Удалить</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- =========================================================== End Rent Page ========================================================-->
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
